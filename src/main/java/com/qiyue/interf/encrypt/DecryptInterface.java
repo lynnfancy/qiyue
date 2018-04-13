@@ -1,0 +1,9 @@
+package com.qiyue.interf.encrypt;
+/**
+ * √‹ŒƒΩ‚√‹
+ * @author muxianliangqin
+ *
+ */
+public interface DecryptInterface {
+	public String decrypt(String ciphertext) throws Exception;
+}
