@@ -10,12 +10,16 @@ import org.apache.tomcat.util.codec.binary.Base64;
 
 import com.qiyue.constant.Constant;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class ZipUtil {
 
 	public static String gzip(String str) throws Exception {
 		String zip = "";
 		if (BaseUtil.isEmpty(str)) {
-			throw new Exception("str不能为空");
+			log.debug(str);
+			return zip;
 		}
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
 		GZIPOutputStream gzos = null;

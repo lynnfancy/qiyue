@@ -41,6 +41,11 @@ public class DateUtil {
 		return formatDate(date1,outputFormater);
 	}
 	
+	public static String formatDate(String str,String outputFormater) throws ParseException {
+		Date date1 = parseDate(str,Constant.DATE_FORMATER_NO_INTERVAL);
+		return formatDate(date1,outputFormater);
+	}
+	
 	public static int compareDate(Date date1,Date date2) {
 		return date1.compareTo(date2);
 	}
@@ -55,7 +60,7 @@ public class DateUtil {
 	 * @return
 	 * @throws Exception 
 	 */
-	public static String dateHandle(String inputDate,boolean beforeOrAfter,int days,String inputDateFormat,String outputDateFormat) throws Exception{
+	public static String dateHandle(String inputDate,int days,String inputDateFormat,String outputDateFormat) throws Exception{
 		SimpleDateFormat inputSdf = new SimpleDateFormat(inputDateFormat);
 		SimpleDateFormat outputSdf = new SimpleDateFormat(outputDateFormat);
 		Date oneDay = null;
@@ -65,16 +70,16 @@ public class DateUtil {
 			Calendar oneCalendar = Calendar.getInstance();
 			oneCalendar.setTime(oneDay);
 			int day = oneCalendar.get(Calendar.DATE);
-			if (beforeOrAfter){
-				oneCalendar.set(Calendar.DATE, day - days);
-			} else {
-				oneCalendar.set(Calendar.DATE, day + days);
-			}
+			oneCalendar.set(Calendar.DATE, day + days);
 			anyDate = oneCalendar.getTime();
 			String anyDay = outputSdf.format(anyDate);
 			return anyDay;
 		} catch (ParseException e) {
 			throw new Exception("日期格式不正确");
 		}
+	}
+	
+	public static String dateHandle(String inputDate,int days) throws Exception{
+		return dateHandle(inputDate,days,Constant.DATE_FORMATER_NO_INTERVAL,Constant.DATE_FORMATER_NO_INTERVAL);
 	}
 }

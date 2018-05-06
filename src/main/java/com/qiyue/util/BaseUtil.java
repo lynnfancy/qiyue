@@ -24,7 +24,7 @@ public class BaseUtil {
 	 */
 	public static boolean isEmpty(String str){
 		boolean flag = false;
-		if (str==null||"".equals(str.trim())){
+		if (str==null||"".equals(str.trim())||"null".equals(str)){
 			flag = true;
 		}
 		return flag;

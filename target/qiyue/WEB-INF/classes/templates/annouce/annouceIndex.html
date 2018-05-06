@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>政府公告归集</title>
+    <!-- Bootstrap CSS -->
+	<link th:href="@{${contextUrl}+'/static/bootstrap/bootstrap-4.0.0/dist/css/bootstrap.min.css'}" rel="stylesheet" />
+    <!-- jQuery -->
+    <script th:src="@{${contextUrl}+'/static/jquery-3.3.1.js'}"></script>
+    <!-- Bootstrap JS -->
+    <script th:src="@{${contextUrl}+'/static/bootstrap/bootstrap-4.0.0/dist/js/bootstrap.min.js'}"></script>
+    <!-- 初始化导航栏 -->
+    <script th:src="@{${contextUrl}+'/static/custom/js/user/navi.js'}"></script>
+    <script th:src="@{${contextUrl}+'/static/custom/js/annouce/annouceIndex.js'}" ></script>
+    <script th:inline="javascript">
+	    /*<![CDATA[*/  
+			var contextUrl = [[${contextUrl}]];  
+			initNavi(contextUrl);
+		/*]]>*/  
+    </script>
+    <!-- 初始化导航栏  end -->
+    <script type="text/javascript">
+    </script>
+    <style>
+    	.selected {
+    		color:red;
+    	}
+    </style>
+</head>
+<body>
+	<!-- 导航栏  -->
+	<div id="navi">
+	</div>
+	<div id="container">
+		<div class="d-md-flex flex-md-equal w-100 h-100 my-md-3 pl-md-3">
+		    <div class="bg-light mr-md-3 pt-3 px-3 text-black h-100" id="leftArea" style="width:15%!important;">
+		    	<div id="awiList">
+<!-- 				  <div class="card"> -->
+<!-- 				    <div class="card-header" id="headingOne" style="padding:0.75rem 0rem;"> -->
+<!-- 				      <h5 class="mb-0"> -->
+<!-- 				        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> -->
+<!-- 				          	广东省人民政府门户网站 -->
+<!-- 				        </button> -->
+<!-- 				      </h5> -->
+<!-- 				    </div> -->
+<!-- 				    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion"> -->
+<!-- 				      	<ul class="list-group"> -->
+<!-- 							<li class="list-group-item">魅力广东</li> -->
+<!-- 							<li class="list-group-item">政务公开</li> -->
+<!-- 							<li class="list-group-item">投资广东</li> -->
+<!-- 							<li class="list-group-item">要闻动态</li> -->
+<!-- 						</ul> -->
+<!-- 				    </div> -->
+<!-- 				  </div> -->
+				</div>
+			</div>
+			<div class="bg-light mr-md-3 pt-3 px-3 text-dark overflow-hidden h-100" style="width:85%!important;">
+				<div class="my-1 py-1 text-center ">
+					<div id="overview">
+	<!-- 					<nav aria-label="breadcrumb"> -->
+	<!-- 					  <ol class="breadcrumb"> -->
+	<!-- 					    <li class="breadcrumb-item"><a href="#">Home</a></li> -->
+	<!-- 					    <li class="breadcrumb-item"><a href="#">Library</a></li> -->
+	<!-- 					    <li class="breadcrumb-item active" aria-current="page">Data</li> -->
+	<!-- 					  </ol> -->
+	<!-- 					</nav> -->
+					</div>
+		    	</div>
+		    	<div class="bg-light box-shadow mx-auto pb-md-5 ">
+		    		<div id="titles">
+		    			<h4>功能简介</h4>
+				    	<p>该功能主要是定时收集政府网站发布的最新消息，进行汇总展示。</p>
+				    	<br>
+				    	<p>每小时整点运行信息采集任务。</p>
+				    	<br>
+						<p>如有使用建议，请联系管理员。</p>
+						<br>
+						<p>如有使用异常，请联系管理员。</p>
+					</div>
+<!-- 					<button type="button" class="btn btn-peimary" data-toggle="modal" data-target="#text">button</button> -->
+					<div class="modal fade" id="text" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="modalTitle"></h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body" id="textContent">
+									
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="pagination" class="mr-md-3 pt-3">
+<!-- 				    	<nav aria-label="..."> -->
+<!-- 							<ul class="pagination"> -->
+<!-- 							</ul> -->
+<!-- 						</nav> -->
+			    	</div>
+		    	</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

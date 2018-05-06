@@ -5,15 +5,18 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.TreeMap;
 
+import org.springframework.stereotype.Component;
+
 import com.qiyue.interf.encrypt.EncryptInterface;
 import com.qiyue.util.BaseUtil;
 import com.qiyue.util.Md5Util;
 
 /**
- * ²ÎÊýMD5¼ÓÃÜ´¦Àí
+ * ï¿½ï¿½ï¿½ï¿½MD5ï¿½ï¿½ï¿½Ü´ï¿½ï¿½ï¿½
  * @author muxianliangqin
  *
  */
+@Component
 public class ParamsHandler{
 
 	private Map<String, String> paramsMap;
@@ -56,7 +59,7 @@ public class ParamsHandler{
 			EncryptInterface ei = new Md5Util();
 			md5 = ei.encrypt(sb.toString());
 		} catch (Exception e) {
-			throw new Exception("MD5¼ÓÃÜÊ§°Ü");
+			throw new Exception("MD5ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½");
 		}
 		return md5;
 	}

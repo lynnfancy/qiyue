@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link th:href="@{${contextUrl}+'/static/bootstrap/bootstrap-4.0.0/dist/css/bootstrap.min.css'}" rel="stylesheet" />
+    <link th:href="@{${contextUrl}+'/static/bootstrap/bootstrap-4.0.0/docs/4.0/examples/sign-in/signin.css'}" rel="stylesheet">
+    <!-- jQuery -->
+    <script th:src="@{${contextUrl}+'/static/jquery-3.3.1.js'}"></script>
+    <!-- Bootstrap JS -->
+    <script th:src="@{${contextUrl}+'/static/bootstrap/bootstrap-4.0.0/dist/js/bootstrap.min.js'}"></script>
+    <title>qiyue</title>
+</head>
+<body>
+	<div id="signIn" class="text-center">
+		<form class="form-signin" method="post" action="login">
+	      <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"/>
+	      <h1 class="h3 mb-3 font-weight-normal">Welcome aiqiyue.com</h1>
+	      <label for="username" class="sr-only"></label>
+	      <input type="text" id="username" name="username" class="form-control" placeholder="用户名" required="required" autofocus/>
+	      <label for="password" class="sr-only"></label>
+	      <input type="password" id="password" name="password" class="form-control" placeholder="密码" required="required"/>
+	      <p th:text="${errorMsg}" style="font-size: 0.75rem;text-align: left;color: red;"></p>
+	      <div class="checkbox mb-3">
+	        <label><input type="checkbox" value="remember-me"> Remember me</label>
+	      </div>
+	      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+	      <p class="mt-5 mb-3 text-muted">© 2017-2018</p>
+	    </form>
+	</div>
+</body>
+</html>

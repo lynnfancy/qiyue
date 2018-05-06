@@ -11,9 +11,9 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 @Configuration
 @EnableAsync
 public class AsyncConfig {
-	@Value("${schedul.core.pool.size}")
+	@Value("${schedul.pool.size.core}")
     private int corePoolSize;
-	@Value("${schedul.max.pool.size}")
+	@Value("${schedul.pool.size.max}")
     private int maxPoolSize;
 	@Value("${schedul.queue.capacity}")
     private int queueCapacity;

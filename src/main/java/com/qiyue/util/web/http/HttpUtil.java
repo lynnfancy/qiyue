@@ -29,6 +29,9 @@ import javax.net.ssl.TrustManager;
 import com.qiyue.constant.Constant;
 import com.qiyue.util.BaseUtil;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class HttpUtil {
 
     private static boolean proxySet = false;
@@ -71,6 +74,7 @@ public class HttpUtil {
             	sb.append(line);
             }
         } catch (Exception e) {
+        	log.error("连接异常的url:{}",url);
             e.printStackTrace();
         } finally {
             try {

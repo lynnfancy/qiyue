@@ -1,0 +1,332 @@
+23:32:53.704 logback [restartedMain] INFO  com.qiyue.Application - Starting Application on LAPTOP-FDIQ2FSI with PID 20204 (D:\spring\workspace\sts\test\qiyue\target\classes started by muxianliangqin in D:\spring\workspace\sts\test\qiyue)
+23:32:53.705 logback [restartedMain] INFO  com.qiyue.Application - The following profiles are active: constant,dev
+23:32:53.707 logback [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@73c4dada: startup date [Sat May 05 23:32:53 GMT+08:00 2018]; root of context hierarchy
+23:32:54.176 logback [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+23:32:54.193 logback [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+23:32:54.249 logback [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+23:32:54.261 logback [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.qiyue.dao.annouce.repository.AnnouceCollectorInfoRepository.
+23:32:54.261 logback [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.qiyue.dao.annouce.repository.AnnouceCollectorResultRepository.
+23:32:54.261 logback [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.qiyue.dao.annouce.repository.AnnouceWebsiteInfoRepository.
+23:32:54.262 logback [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.qiyue.dao.user.repository.NavigationRepository.
+23:32:54.262 logback [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.qiyue.dao.user.repository.UserRepository.
+23:32:54.329 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$febaafc3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+23:32:54.474 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+23:32:54.475 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:32:54.475 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+23:32:54.499 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:32:54.500 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 793 ms
+23:32:54.637 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+23:32:54.637 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'sessionRepositoryFilter' to: [/*]
+23:32:54.637 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+23:32:54.724 logback [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+23:32:54.730 logback [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+23:32:54.740 logback [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'annouce'
+23:32:54.740 logback [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: annouce
+	...]
+23:32:54.789 logback [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+23:32:54.841 logback [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'annouce'
+23:32:54.882 logback [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'user'
+23:32:54.882 logback [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: user
+	...]
+23:32:54.932 logback [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+23:32:54.939 logback [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+23:32:54.941 logback [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+23:32:54.982 logback [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'user'
+23:32:55.229 logback [restartedMain] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+23:32:55.374 logback [restartedMain] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+23:32:55.467 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 
+23:32:55.468 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'taskExecutor'
+23:32:55.527 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collect],methods=[GET]}" onto public java.lang.String com.qiyue.controller.annouce.AnnouceController.collect(java.lang.String)
+23:32:55.528 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/index]}" onto java.lang.String com.qiyue.controller.annouce.AnnouceController.annouceIndex()
+23:32:55.528 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collector/awiModify]}" onto com.qiyue.dao.annouce.entity.AnnouceWebsiteInfo com.qiyue.controller.annouce.AnnouceController.awiModify(com.qiyue.dao.annouce.entity.AnnouceWebsiteInfo)
+23:32:55.528 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collector/aciDelete]}" onto int com.qiyue.controller.annouce.AnnouceController.aciDelete(java.lang.String)
+23:32:55.528 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collector/aciTestShow]}" onto java.util.List<com.qiyue.dao.annouce.entity.AnnouceCollectorResult> com.qiyue.controller.annouce.AnnouceController.aciTestShow() throws java.lang.Exception
+23:32:55.529 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collector/awiAdd]}" onto void com.qiyue.controller.annouce.AnnouceController.awiAdd(com.qiyue.dao.annouce.entity.AnnouceWebsiteInfo) throws java.lang.Exception
+23:32:55.529 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/awiList]}" onto java.util.List<com.qiyue.dao.annouce.entity.AnnouceWebsiteInfo> com.qiyue.controller.annouce.AnnouceController.awiList() throws java.lang.Exception
+23:32:55.529 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collector/awiShow]}" onto java.util.List<com.qiyue.dao.annouce.entity.AnnouceWebsiteInfo> com.qiyue.controller.annouce.AnnouceController.awiShow() throws java.lang.Exception
+23:32:55.529 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collector/aciTestAdd]}" onto void com.qiyue.controller.annouce.AnnouceController.aciTestAdd(com.qiyue.dao.annouce.entity.AnnouceCollectorInfo) throws java.lang.Exception
+23:32:55.530 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/pagination]}" onto int com.qiyue.controller.annouce.AnnouceController.pageTotal(java.lang.String,java.lang.String) throws java.lang.Exception
+23:32:55.530 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collector/awiDelete]}" onto int com.qiyue.controller.annouce.AnnouceController.awiDelete(java.lang.String)
+23:32:55.531 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collector/aciAdd]}" onto void com.qiyue.controller.annouce.AnnouceController.aciAdd(com.qiyue.dao.annouce.entity.AnnouceCollectorInfo)
+23:32:55.531 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collector]}" onto java.lang.String com.qiyue.controller.annouce.AnnouceController.collectorShow() throws java.lang.Exception
+23:32:55.531 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collector/aciModify]}" onto void com.qiyue.controller.annouce.AnnouceController.aciModify(com.qiyue.dao.annouce.entity.AnnouceCollectorInfo)
+23:32:55.532 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/titleShow]}" onto java.util.List<com.qiyue.dao.annouce.entity.AnnouceCollectorResult> com.qiyue.controller.annouce.AnnouceController.titleShow(int,java.lang.String,java.lang.String) throws java.lang.Exception
+23:32:55.532 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collector/aciShow]}" onto public java.util.List<com.qiyue.dao.annouce.entity.AnnouceCollectorInfo> com.qiyue.controller.annouce.AnnouceController.aciShow(java.lang.String)
+23:32:55.533 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/clan/index]}" onto java.lang.String com.qiyue.controller.clan.ClanController.index()
+23:32:55.533 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto java.lang.String com.qiyue.controller.user.UserController.index()
+23:32:55.534 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto java.lang.String com.qiyue.controller.user.UserController.welcome(java.util.HashMap<java.lang.String, java.lang.Object>)
+23:32:55.534 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/navi]}" onto com.qiyue.node.Node com.qiyue.controller.user.UserController.navi()
+23:32:55.534 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto java.lang.String com.qiyue.controller.user.UserController.login(java.lang.String,java.lang.String,org.springframework.ui.Model)
+23:32:55.538 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+23:32:55.539 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+23:32:55.577 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:32:55.577 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/templates/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:32:55.602 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@73c4dada: startup date [Sat May 05 23:32:53 GMT+08:00 2018]; root of context hierarchy
+23:32:55.871 logback [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:32:56.123 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+23:32:56.177 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+23:32:56.177 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'annouceDataSource' has been autodetected for JMX exposure
+23:32:56.177 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'userDataSource' has been autodetected for JMX exposure
+23:32:56.181 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'userDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=userDataSource,type=HikariDataSource]
+23:32:56.182 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'annouceDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=annouceDataSource,type=HikariDataSource]
+23:32:56.183 logback [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+23:32:56.195 logback [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+23:32:56.204 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+23:32:56.205 logback [restartedMain] INFO  com.qiyue.Application - Started Application in 2.602 seconds (JVM running for 79.022)
+23:32:56.226 logback [restartedMain] INFO  c.qiyue.init.RedisCommandLineRunner - 加载redis缓存:网站设置信息,awiList:[AnnouceWebsiteInfo(flowNo=AWI2018043022321232397007, websiteCode=gzgov, websiteUrl=http://www.gz.gov.cn/, websiteName=广州市人民政府门户网站, titleRegex=null, encode=UTF-8, state=0, createTime=20180430223212, createUsername=admin, modifyTime=20180501235920, modifyUsername=admin, aciList=[AnnouceCollectorInfo(flowNo=ACI2018050117070040212829, awiFlowNo=AWI2018043022321232397007, categoryCode=null, categoryName=法规公文, titleUrlWhite=http://www.gz.gov.cn/gzgov/s2792/gk_fggw_list2.shtml, textUrlRegexWhite=http:\/\/www\.gz\.gov\.cn\/gzgov\/s[0-9]{4}\/.+, textUrlRegexBlack=, publishTimeSelector=div.clearfix span.time, titleSelector=h1.info_title, textSelector=#zoomcon, state=0, createTime=20180501170700, createUsername=admin, modifyTime=20180501170700, modifyUsername=admin)]), AnnouceWebsiteInfo(flowNo=AWI2018043017035506565833, websiteCode=szgov, websiteUrl=http://www.sz.gov.cn/cn/, websiteName=深圳政府在线, titleRegex=null, encode=GBK, state=0, createTime=20180430170211, createUsername=admin, modifyTime=20180430222821, modifyUsername=admin, aciList=[AnnouceCollectorInfo(flowNo=ACI2018050116205550408308, awiFlowNo=AWI2018043017035506565833, categoryCode=null, categoryName=部门动态, titleUrlWhite=http://www.sz.gov.cn/cn/xxgk/zfxxgj/bmdt/, textUrlRegexWhite=http:\/\/www\.sz\.gov\.cn\/cn\/xxgk\/zfxxgj\/bmdt\/.+, textUrlRegexBlack=, publishTimeSelector=div.tit h6 span:eq(1), titleSelector=div.tit h1, textSelector=div.TRS_Editor, state=0, createTime=20180501162054, createUsername=admin, modifyTime=20180501163924, modifyUsername=admin), AnnouceCollectorInfo(flowNo=ACI2018043018134178527673, awiFlowNo=AWI2018043017035506565833, categoryCode=null, categoryName=通知公告, titleUrlWhite=http://www.sz.gov.cn/cn/xxgk/zfxxgj/tzgg/, textUrlRegexWhite=http:\/\/www\.sz\.gov\.cn\/cn\/xxgk\/zfxxgj\/tzgg\/.+, textUrlRegexBlack=, publishTimeSelector=div.tit h6 span:eq(1), titleSelector=div.tit h1, textSelector=div.TRS_Editor, state=0, createTime=20180430181341, createUsername=null, modifyTime=20180501163629, modifyUsername=admin)])]
+23:32:56.240 logback [restartedMain] INFO  c.qiyue.init.RedisCommandLineRunner - 加载redis缓存:导航栏信息,naviNode:Node(element=NavigationEntity(code=0000, name=首页, supCode=0000, url=/index), children=[Node(element=NavigationEntity(code=0100, name=政府公告收集, supCode=0000, url=/annouce), children=[Node(element=NavigationEntity(code=0101, name=公告展示, supCode=0100, url=/annouce/index), children=[], parent=Node(element=NavigationEntity(code=0100, name=政府公告收集, supCode=0000, url=/annouce), children=[], parent=null, height=1, hasChild=false, hasParent=false), height=1, hasChild=false, hasParent=true), Node(element=NavigationEntity(code=0102, name=采集器设置, supCode=0100, url=/annouce/collector/), children=[], parent=Node(element=NavigationEntity(code=0100, name=政府公告收集, supCode=0000, url=/annouce), children=[], parent=null, height=1, hasChild=false, hasParent=false), height=1, hasChild=false, hasParent=true)], parent=Node(element=NavigationEntity(code=0000, name=首页, supCode=0000, url=/index), children=[], parent=null, height=1, hasChild=false, hasParent=false), height=2, hasChild=true, hasParent=true), Node(element=NavigationEntity(code=0200, name=宗族图谱, supCode=0000, url=/clan), children=[], parent=Node(element=NavigationEntity(code=0000, name=首页, supCode=0000, url=/index), children=[], parent=null, height=1, hasChild=false, hasParent=false), height=1, hasChild=false, hasParent=true)], parent=null, height=3, hasChild=true, hasParent=false)
+23:32:56.241 logback [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+23:36:25.941 logback [Thread-14] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@73c4dada: startup date [Sat May 05 23:32:53 GMT+08:00 2018]; root of context hierarchy
+23:36:25.943 logback [Thread-14] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+23:36:25.946 logback [Thread-14] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+23:36:25.946 logback [Thread-14] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+23:36:25.947 logback [Thread-14] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'taskExecutor'
+23:36:25.948 logback [Thread-14] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'user'
+23:36:25.948 logback [Thread-14] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+23:36:25.955 logback [Thread-14] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+23:36:25.955 logback [Thread-14] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'annouce'
+23:36:25.956 logback [Thread-14] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+23:36:25.958 logback [Thread-14] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+23:43:01.520 logback [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.classic.joran.action.ContextNameAction - Failed to rename context [logback] as [qiyue] java.lang.IllegalStateException: Context has been already given a name
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:166)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:82)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:114)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:264)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:237)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:200)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:173)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:351)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234)
+	at com.qiyue.Application.main(Application.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+23:43:38.641 qiyue [restartedMain] INFO  com.qiyue.Application - Starting Application on LAPTOP-FDIQ2FSI with PID 15552 (D:\spring\workspace\sts\test\qiyue\target\classes started by muxianliangqin in D:\spring\workspace\sts\test\qiyue)
+23:43:38.642 qiyue [restartedMain] INFO  com.qiyue.Application - The following profiles are active: constant,dev
+23:43:38.712 qiyue [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7345535c: startup date [Sat May 05 23:43:38 GMT+08:00 2018]; root of context hierarchy
+23:43:39.416 qiyue [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+23:43:39.462 qiyue [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+23:43:39.629 qiyue [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+23:43:39.653 qiyue [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.qiyue.dao.annouce.repository.AnnouceCollectorInfoRepository.
+23:43:39.654 qiyue [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.qiyue.dao.annouce.repository.AnnouceCollectorResultRepository.
+23:43:39.655 qiyue [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.qiyue.dao.annouce.repository.AnnouceWebsiteInfoRepository.
+23:43:39.655 qiyue [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.qiyue.dao.user.repository.NavigationRepository.
+23:43:39.656 qiyue [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.qiyue.dao.user.repository.UserRepository.
+23:43:40.055 qiyue [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ec66e158] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+23:43:40.487 qiyue [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+23:43:40.496 qiyue [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:43:40.506 qiyue [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:43:40.507 qiyue [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+23:43:40.513 qiyue [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Java\jdk1.8.0_77\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/Java/jre1.8.0_144/bin/server;D:/Java/jre1.8.0_144/bin;D:/Java/jre1.8.0_144/lib/amd64;D:\program\oracle\product\11.2.0\dbhome_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\ksyh\svn\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\program\mysql\mysql-5.7.21-winx64\bin;%MAVEN_HOME%\bin;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar;%JAVA_HOME%\lib\dt.jar;D:\program\curl\curl-7.59.0-win64-mingw\bin;D:\python\python\Scripts\;D:\python\python\;C:\Users\muxianliangqin\AppData\Local\Microsoft\WindowsApps;C:\Users\muxianliangqin\AppData\Local\GitHubDesktop\bin;D:\spring\STS\spring-tool-suite-3.9.3.RELEASE-e4.7.3-win32-x86_64\sts-bundle\sts-3.9.3.RELEASE;;.]
+23:43:40.609 qiyue [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:43:40.609 qiyue [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1897 ms
+23:43:41.053 qiyue [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+23:43:41.054 qiyue [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'sessionRepositoryFilter' to: [/*]
+23:43:41.054 qiyue [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+23:43:41.210 qiyue [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:43:41.373 qiyue [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:43:41.407 qiyue [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'annouce'
+23:43:41.418 qiyue [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: annouce
+	...]
+23:43:41.475 qiyue [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.14.Final}
+23:43:41.477 qiyue [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+23:43:41.525 qiyue [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+23:43:41.661 qiyue [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+23:43:42.056 qiyue [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'annouce'
+23:43:42.097 qiyue [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'user'
+23:43:42.097 qiyue [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: user
+	...]
+23:43:42.141 qiyue [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+23:43:42.146 qiyue [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+23:43:42.147 qiyue [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+23:43:42.195 qiyue [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'user'
+23:43:42.722 qiyue [restartedMain] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+23:43:42.913 qiyue [restartedMain] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+23:43:43.026 qiyue [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 
+23:43:43.032 qiyue [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'taskExecutor'
+23:43:43.160 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collect],methods=[GET]}" onto public java.lang.String com.qiyue.controller.annouce.AnnouceController.collect(java.lang.String)
+23:43:43.161 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collector/awiAdd]}" onto void com.qiyue.controller.annouce.AnnouceController.awiAdd(com.qiyue.dao.annouce.entity.AnnouceWebsiteInfo) throws java.lang.Exception
+23:43:43.161 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/index]}" onto java.lang.String com.qiyue.controller.annouce.AnnouceController.annouceIndex()
+23:43:43.161 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collector/aciModify]}" onto void com.qiyue.controller.annouce.AnnouceController.aciModify(com.qiyue.dao.annouce.entity.AnnouceCollectorInfo)
+23:43:43.162 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collector/awiModify]}" onto com.qiyue.dao.annouce.entity.AnnouceWebsiteInfo com.qiyue.controller.annouce.AnnouceController.awiModify(com.qiyue.dao.annouce.entity.AnnouceWebsiteInfo)
+23:43:43.162 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collector/aciTestShow]}" onto java.util.List<com.qiyue.dao.annouce.entity.AnnouceCollectorResult> com.qiyue.controller.annouce.AnnouceController.aciTestShow() throws java.lang.Exception
+23:43:43.162 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collector/awiShow]}" onto java.util.List<com.qiyue.dao.annouce.entity.AnnouceWebsiteInfo> com.qiyue.controller.annouce.AnnouceController.awiShow() throws java.lang.Exception
+23:43:43.163 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/awiList]}" onto java.util.List<com.qiyue.dao.annouce.entity.AnnouceWebsiteInfo> com.qiyue.controller.annouce.AnnouceController.awiList() throws java.lang.Exception
+23:43:43.163 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/titleShow]}" onto java.util.List<com.qiyue.dao.annouce.entity.AnnouceCollectorResult> com.qiyue.controller.annouce.AnnouceController.titleShow(int,java.lang.String,java.lang.String) throws java.lang.Exception
+23:43:43.163 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/pagination]}" onto int com.qiyue.controller.annouce.AnnouceController.pageTotal(java.lang.String,java.lang.String) throws java.lang.Exception
+23:43:43.163 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collector/awiDelete]}" onto int com.qiyue.controller.annouce.AnnouceController.awiDelete(java.lang.String)
+23:43:43.164 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collector/aciDelete]}" onto int com.qiyue.controller.annouce.AnnouceController.aciDelete(java.lang.String)
+23:43:43.164 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collector/aciTestAdd]}" onto void com.qiyue.controller.annouce.AnnouceController.aciTestAdd(com.qiyue.dao.annouce.entity.AnnouceCollectorInfo) throws java.lang.Exception
+23:43:43.164 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collector/aciShow]}" onto public java.util.List<com.qiyue.dao.annouce.entity.AnnouceCollectorInfo> com.qiyue.controller.annouce.AnnouceController.aciShow(java.lang.String)
+23:43:43.165 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collector]}" onto java.lang.String com.qiyue.controller.annouce.AnnouceController.collectorShow() throws java.lang.Exception
+23:43:43.165 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/annouce/collector/aciAdd]}" onto void com.qiyue.controller.annouce.AnnouceController.aciAdd(com.qiyue.dao.annouce.entity.AnnouceCollectorInfo)
+23:43:43.166 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/clan/index]}" onto java.lang.String com.qiyue.controller.clan.ClanController.index()
+23:43:43.166 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto java.lang.String com.qiyue.controller.user.UserController.index()
+23:43:43.167 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/navi]}" onto com.qiyue.node.Node com.qiyue.controller.user.UserController.navi()
+23:43:43.167 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto java.lang.String com.qiyue.controller.user.UserController.welcome(java.util.HashMap<java.lang.String, java.lang.Object>)
+23:43:43.167 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto java.lang.String com.qiyue.controller.user.UserController.login(java.lang.String,java.lang.String,org.springframework.ui.Model)
+23:43:43.172 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+23:43:43.173 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+23:43:43.233 qiyue [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:43:43.234 qiyue [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/templates/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:43:43.284 qiyue [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7345535c: startup date [Sat May 05 23:43:38 GMT+08:00 2018]; root of context hierarchy
+23:43:43.733 qiyue [restartedMain] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+23:43:43.734 qiyue [restartedMain] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+23:43:44.519 qiyue [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:43:44.962 qiyue [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+23:43:45.030 qiyue [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+23:43:45.031 qiyue [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'annouceDataSource' has been autodetected for JMX exposure
+23:43:45.032 qiyue [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'userDataSource' has been autodetected for JMX exposure
+23:43:45.037 qiyue [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'userDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=userDataSource,type=HikariDataSource]
+23:43:45.038 qiyue [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'annouceDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=annouceDataSource,type=HikariDataSource]
+23:43:45.042 qiyue [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+23:43:45.088 qiyue [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+23:43:45.095 qiyue [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:43:45.097 qiyue [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+23:43:45.114 qiyue [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+23:43:45.117 qiyue [restartedMain] INFO  com.qiyue.Application - Started Application in 6.879 seconds (JVM running for 7.812)
+23:43:45.166 qiyue [restartedMain] INFO  c.qiyue.init.RedisCommandLineRunner - 加载redis缓存:网站设置信息,awiList:[AnnouceWebsiteInfo(flowNo=AWI2018043022321232397007, websiteCode=gzgov, websiteUrl=http://www.gz.gov.cn/, websiteName=广州市人民政府门户网站, titleRegex=null, encode=UTF-8, state=0, createTime=20180430223212, createUsername=admin, modifyTime=20180501235920, modifyUsername=admin, aciList=[AnnouceCollectorInfo(flowNo=ACI2018050117070040212829, awiFlowNo=AWI2018043022321232397007, categoryCode=null, categoryName=法规公文, titleUrlWhite=http://www.gz.gov.cn/gzgov/s2792/gk_fggw_list2.shtml, textUrlRegexWhite=http:\/\/www\.gz\.gov\.cn\/gzgov\/s[0-9]{4}\/.+, textUrlRegexBlack=, publishTimeSelector=div.clearfix span.time, titleSelector=h1.info_title, textSelector=#zoomcon, state=0, createTime=20180501170700, createUsername=admin, modifyTime=20180501170700, modifyUsername=admin)]), AnnouceWebsiteInfo(flowNo=AWI2018043017035506565833, websiteCode=szgov, websiteUrl=http://www.sz.gov.cn/cn/, websiteName=深圳政府在线, titleRegex=null, encode=GBK, state=0, createTime=20180430170211, createUsername=admin, modifyTime=20180430222821, modifyUsername=admin, aciList=[AnnouceCollectorInfo(flowNo=ACI2018050116205550408308, awiFlowNo=AWI2018043017035506565833, categoryCode=null, categoryName=部门动态, titleUrlWhite=http://www.sz.gov.cn/cn/xxgk/zfxxgj/bmdt/, textUrlRegexWhite=http:\/\/www\.sz\.gov\.cn\/cn\/xxgk\/zfxxgj\/bmdt\/.+, textUrlRegexBlack=, publishTimeSelector=div.tit h6 span:eq(1), titleSelector=div.tit h1, textSelector=div.TRS_Editor, state=0, createTime=20180501162054, createUsername=admin, modifyTime=20180501163924, modifyUsername=admin), AnnouceCollectorInfo(flowNo=ACI2018043018134178527673, awiFlowNo=AWI2018043017035506565833, categoryCode=null, categoryName=通知公告, titleUrlWhite=http://www.sz.gov.cn/cn/xxgk/zfxxgj/tzgg/, textUrlRegexWhite=http:\/\/www\.sz\.gov\.cn\/cn\/xxgk\/zfxxgj\/tzgg\/.+, textUrlRegexBlack=, publishTimeSelector=div.tit h6 span:eq(1), titleSelector=div.tit h1, textSelector=div.TRS_Editor, state=0, createTime=20180430181341, createUsername=null, modifyTime=20180501163629, modifyUsername=admin)])]
+23:43:45.186 qiyue [restartedMain] INFO  c.qiyue.init.RedisCommandLineRunner - 加载redis缓存:导航栏信息,naviNode:Node(element=NavigationEntity(code=0000, name=首页, supCode=0000, url=/index), children=[Node(element=NavigationEntity(code=0100, name=政府公告收集, supCode=0000, url=/annouce), children=[Node(element=NavigationEntity(code=0101, name=公告展示, supCode=0100, url=/annouce/index), children=[], parent=Node(element=NavigationEntity(code=0100, name=政府公告收集, supCode=0000, url=/annouce), children=[], parent=null, height=1, hasChild=false, hasParent=false), height=1, hasChild=false, hasParent=true), Node(element=NavigationEntity(code=0102, name=采集器设置, supCode=0100, url=/annouce/collector/), children=[], parent=Node(element=NavigationEntity(code=0100, name=政府公告收集, supCode=0000, url=/annouce), children=[], parent=null, height=1, hasChild=false, hasParent=false), height=1, hasChild=false, hasParent=true)], parent=Node(element=NavigationEntity(code=0000, name=首页, supCode=0000, url=/index), children=[], parent=null, height=1, hasChild=false, hasParent=false), height=2, hasChild=true, hasParent=true), Node(element=NavigationEntity(code=0200, name=宗族图谱, supCode=0000, url=/clan), children=[], parent=Node(element=NavigationEntity(code=0000, name=首页, supCode=0000, url=/index), children=[], parent=null, height=1, hasChild=false, hasParent=false), height=1, hasChild=false, hasParent=true)], parent=null, height=3, hasChild=true, hasParent=false)
+23:48:41.728 qiyue [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+23:48:41.728 qiyue [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7345535c: startup date [Sat May 05 23:43:38 GMT+08:00 2018]; root of context hierarchy
+23:48:41.730 qiyue [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+23:48:41.735 qiyue [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+23:48:41.737 qiyue [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+23:48:41.738 qiyue [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'taskExecutor'
+23:48:41.739 qiyue [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'user'
+23:48:41.740 qiyue [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+23:48:41.748 qiyue [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+23:48:41.748 qiyue [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'annouce'
+23:48:41.748 qiyue [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:48:41.750 qiyue [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:57:07.305 qiyue [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[file] - 'FileNamePattern' option has the same value "logback.%d{yyyy-MM-dd}.log" as that given for appender [file] defined earlier.
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[file] - Collisions detected with FileAppender/RollingAppender instances defined earlier. Aborting.
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[file] - For more information, please visit http://logback.qos.ch/codes.html#earlier_fa_collision
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:166)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:82)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:114)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:264)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:237)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:200)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:173)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:351)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234)
+	at com.qiyue.Application.main(Application.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+23:58:16.726 qiyue [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[file] - 'FileNamePattern' option has the same value "logback.%d{yyyy-MM-dd}.log" as that given for appender [file1] defined earlier.
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[file] - Collisions detected with FileAppender/RollingAppender instances defined earlier. Aborting.
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[file] - For more information, please visit http://logback.qos.ch/codes.html#earlier_fa_collision
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:166)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:82)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:114)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:264)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:237)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:200)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:173)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:351)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234)
+	at com.qiyue.Application.main(Application.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+23:58:56.300 qiyue [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [file1]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:166)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:82)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:114)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:264)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:237)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:200)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:173)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:351)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234)
+	at com.qiyue.Application.main(Application.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+23:59:13.996 qiyue [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [file]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:166)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:82)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:114)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:264)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:237)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:200)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:173)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:351)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234)
+	at com.qiyue.Application.main(Application.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)

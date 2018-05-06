@@ -1,0 +1,47 @@
+{"properties": [
+  {
+    "name": "schedul.pool.size.core",
+    "type": "java.lang.String",
+    "description": "A description for 'schedul.pool.size.core'"
+  },
+  {
+    "name": "schedul.pool.size.max",
+    "type": "java.lang.String",
+    "description": "A description for 'schedul.pool.size.max'"
+  },
+  {
+    "name": "schedul.queue.capacity",
+    "type": "java.lang.String",
+    "description": "A description for 'schedul.queue.capacity'"
+  },
+  {
+    "name": "sql.batch.size",
+    "type": "java.lang.String",
+    "description": "A description for 'sql.batch.size'"
+  },
+  {
+    "name": "sql.query.page.size",
+    "type": "java.lang.String",
+    "description": "A description for 'sql.query.page.size'"
+  },
+  {
+    "name": "context.url.absoulte",
+    "type": "java.lang.String",
+    "description": "A description for 'context.url.absoulte'"
+  },
+  {
+    "name": "logging.dir",
+    "type": "java.lang.String",
+    "description": "A description for 'logging.dir'"
+  },
+  {
+    "name": "log.dir",
+    "type": "java.lang.String",
+    "description": "A description for 'log.dir'"
+  },
+  {
+    "name": "log.file",
+    "type": "java.lang.String",
+    "description": "A description for 'log.file'"
+  }
+]}

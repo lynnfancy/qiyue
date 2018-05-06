@@ -29,8 +29,8 @@ public class TimeAspect {
      * ~ 第三个 * 任意方法
      * ~ .. 匹配任意数量的参数.
      */
-    @Pointcut("execution(* com.qiyue.service.announcement..*.*(..))")
-    private void pointCutMethod() {
+    @Pointcut("execution(* com.qiyue.controller..*.*(..))")
+    private void controllerCutMethod() {
     }
 
     /**
@@ -39,14 +39,26 @@ public class TimeAspect {
      * @return
      * @throws Throwable
      */
-    @Around("pointCutMethod()")
-    public Object doAround(ProceedingJoinPoint pjp) throws Throwable {
+    @Around("controllerCutMethod()")
+    public Object serviceAround(ProceedingJoinPoint pjp) throws Throwable {
         long begin = System.nanoTime();
         Object obj = pjp.proceed();
         long end = System.nanoTime();
-
-        log.info("调用service.announcement方法：{},\n参数:{},\n执行耗时:{}纳秒,\r\n耗时:{}毫秒",
-                pjp.getSignature().toString(), Arrays.toString(pjp.getArgs()),(end - begin), (end - begin) / 1000000);
+        log.info("\n调用controller方法：{},参数:{},耗时:{}毫秒",pjp.getSignature().toString(), Arrays.toString(pjp.getArgs()), (end - begin) / 1000000);
         return obj;
     }
+    
+//    @Pointcut("execution(* com.qiyue.handler..*.*(..))")
+//    private void collectorCutMethod() {
+//    }
+//    @Around("collectorCutMethod()")
+//    public Object collectorAround(ProceedingJoinPoint pjp) throws Throwable {
+//        long begin = System.nanoTime();
+//        Object obj = pjp.proceed();
+//        long end = System.nanoTime();
+//
+//        log.info("调用com.qiyue.handler方法：{},\n参数:{},\n执行耗时:{}纳秒,\r\n耗时:{}毫秒",
+//                pjp.getSignature().toString(), Arrays.toString(pjp.getArgs()),(end - begin), (end - begin) / 1000000);
+//        return obj;
+//    }
 }
